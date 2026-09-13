@@ -1,0 +1,36 @@
+# This section tells Git to ignore log files.
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# This line ignores the 'node_modules' directory.
+# This folder contains all the third-party packages your project uses.
+# It's very large and can be re-created by running `npm install`, so it shouldn't be in version control.
+node_modules
+
+# These lines ignore build output directories.
+# 'dist' is for production builds, and 'dist-ssr' is for Server-Side Rendering builds.
+# These files are generated from your source code, so they don't need to be tracked.
+dist
+dist-ssr
+
+# This ignores any file ending with '.local'.
+# These are often used for environment variables or local settings that shouldn't be shared.
+*.local
+
+# This section ignores files and folders created by code editors like VS Code and JetBrains IDEs (IntelliJ, WebStorm).
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
